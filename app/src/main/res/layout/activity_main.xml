@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:title="My Firebase App"
+        android:titleTextColor="@android:color/white" />
+
+    <!-- Centered content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Logo (e.g., a moon icon) -->
+
+        <!-- Buttons for login options -->
+
+        <ImageView
+            android:layout_width="155dp"
+            android:layout_height="120dp"
+            android:contentDescription="App logo"
+            android:src="@drawable/baseline_dark_mode_24" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center">
+
+            <!-- Google Sign-in Button -->
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="@android:color/white"
+                android:text="Sign in with Google"
+                android:textColor="@android:color/black" />
+
+            <!-- Facebook Sign-in Button -->
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#3b5998"
+                android:text="Sign in with Facebook"
+                android:textColor="@android:color/white" />
+
+            <!-- Twitter Sign-in Button -->
+            <Button
+                android:id="@+id/btnTwitter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#1DA1F2"
+                android:text="Sign in with Twitter"
+                android:textColor="@android:color/white" />
+
+            <!-- Email Sign-in Button -->
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#D32F2F"
+                android:text="Sign in with email"
+                android:textColor="@android:color/white" />
+
+            <!-- Phone Sign-in Button -->
+            <Button
+                android:id="@+id/btnPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#4CAF50"
+                android:text="Sign in with phone"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
